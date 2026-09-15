@@ -28,7 +28,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 2rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.01);
 }
 
 .logo-link {
@@ -50,7 +51,7 @@
 }
 
 .nav-links a {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   transition: color 0.2s;
   font-size: 0.95rem;
@@ -58,7 +59,7 @@
 
 .nav-links a:hover,
 .nav-links a.router-link-active {
-  color: #5eead4;
+  color: rgba(255, 255, 255, 0.95);
 }
 
 .main {
@@ -68,18 +69,19 @@
 .footer {
   padding: 2rem;
   text-align: center;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.4);
   font-size: 0.875rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
   margin-top: 4rem;
+  background: rgba(255, 255, 255, 0.01);
 }
 
 .footer a {
-  color: #5eead4;
+  color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
 }
 
 .footer a:hover {
-  text-decoration: underline;
+  color: rgba(255, 255, 255, 0.9);
 }
 </style>
