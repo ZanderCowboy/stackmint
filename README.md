@@ -19,13 +19,22 @@ npm run dev
 # Build for production
 npm run build
 
-# Preview production build
+# Preview production build (or use Live Server extension)
 npm run preview
 ```
 
+### Recommended Extensions
+
+- **Vue Language Features (Volar)** - Vue 3 support
+- **Live Server** - Local preview with live reload
+
+### Cache TTL
+
+When testing locally or after deployment, **note that the site has a 1 hour cache TTL**. If changes don't appear immediately, wait up to 1 hour or clear your browser cache.
+
 ## Deployment
 
-The site automatically deploys to GitHub Pages when changes are pushed to the `main` branch via GitHub Actions.
+The site automatically deploys to GitHub Pages when changes are pushed to the `main` branch via GitHub Actions. **Cache TTL is 1 hour** — changes may take up to 1 hour to appear after deployment.
 
 ## DNS Configuration
 
