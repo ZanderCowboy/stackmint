@@ -2,7 +2,6 @@
   <div id="app">
     <nav class="nav">
       <router-link to="/" class="logo-link">
-        <img src="/sprout-icon.png" alt="Stackmint" class="logo" />
         <span class="brand">Stackmint</span>
       </router-link>
       <div class="nav-links">
@@ -35,15 +34,8 @@
 .logo-link {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
   text-decoration: none;
   color: #fff;
-}
-
-.logo {
-  width: 40px;
-  height: 40px;
-  border-radius: 8px;
 }
 
 .brand {
