@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background: #0B1215;
+  color: #fff;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+  margin-bottom: 0.75rem;
+}
+
+p {
+  margin-bottom: 1rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+a {
+  color: #5eead4;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  color: #f9fafb;
+  font-weight: 600;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.6);
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.app-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 2rem;
+}
+
+.app-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 2rem;
+  transition: transform 0.2s, border-color 0.2s, background 0.2s;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  position: relative;
+}
+
+.app-card:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.app-card .card-icon {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.app-card .card-icon img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.app-card h2 {
+  color: #e5e7eb;
+  margin-bottom: 0.5rem;
+}
+
+.app-card .status {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: rgba(34, 197, 94, 0.12);
+  color: #4ade80;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.app-card .status.coming-soon {
+  background: rgba(251, 191, 36, 0.12);
+  color: #fbbf24;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: #5eead4;
+  color: #0F1413;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: transform 0.2s, background 0.2s;
+  margin-top: 1rem;
+}
+
+.cta-button:hover {
+  background: #14b8a6;
+  transform: translateY(-2px);
+}
+
+.cta-button.secondary {
+  background: rgba(255, 255, 255, 0.1);
+  color: #5eead4;
+  border: 1px solid rgba(94, 234, 212, 0.3);
+}
+
+.cta-button.secondary:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: #5eead4;
+}
+
+.badge-link img {
+  height: 60px;
+  margin-top: 1rem;
+}
+
+.privacy-content {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem;
+  line-height: 1.8;
+}
+
+.privacy-content .draft-banner {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  background: rgba(251, 191, 36, 0.1);
+  border: 1px solid rgba(251, 191, 36, 0.3);
+  border-radius: 8px;
+  padding: 1.25rem;
+  margin-bottom: 2.5rem;
+  color: #fbbf24;
+}
+
+.privacy-content .draft-banner svg {
+  flex-shrink: 0;
+  margin-top: 0.125rem;
+}
+
+.privacy-content .draft-banner .banner-content {
+  flex: 1;
+}
+
+.privacy-content .draft-banner strong {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: #fbbf24;
+}
+
+.privacy-content .draft-banner p {
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: rgba(251, 191, 36, 0.9);
+}
+
+.privacy-content h1 {
+  margin-bottom: 0.5rem;
+}
+
+.privacy-content .updated {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.875rem;
+  margin-bottom: 2rem;
+}
+
+.privacy-content h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  color: #e5e7eb;
+  font-size: 1.5rem;
+}
+
+.privacy-content h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.privacy-content ul {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+}
+
+.privacy-content li {
+  margin-bottom: 0.5rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.privacy-content strong {
+  color: #fff;
+}
+
+@media (max-width: 640px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .app-grid {
+    grid-template-columns: 1fr;
+  }
+}
