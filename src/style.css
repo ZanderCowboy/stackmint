@@ -175,6 +175,42 @@ a {
   line-height: 1.8;
 }
 
+.privacy-content .draft-banner {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  background: rgba(251, 191, 36, 0.1);
+  border: 1px solid rgba(251, 191, 36, 0.3);
+  border-radius: 8px;
+  padding: 1.25rem;
+  margin-bottom: 2.5rem;
+  color: #fbbf24;
+}
+
+.privacy-content .draft-banner svg {
+  flex-shrink: 0;
+  margin-top: 0.125rem;
+}
+
+.privacy-content .draft-banner .banner-content {
+  flex: 1;
+}
+
+.privacy-content .draft-banner strong {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: #fbbf24;
+}
+
+.privacy-content .draft-banner p {
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: rgba(251, 191, 36, 0.9);
+}
+
 .privacy-content h1 {
   margin-bottom: 0.5rem;
 }
@@ -188,7 +224,16 @@ a {
 .privacy-content h2 {
   margin-top: 2.5rem;
   margin-bottom: 1rem;
-  color: #5eead4;
+  color: #e5e7eb;
+  font-size: 1.5rem;
+}
+
+.privacy-content h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 
 .privacy-content ul {
@@ -198,7 +243,7 @@ a {
 
 .privacy-content li {
   margin-bottom: 0.5rem;
-  color: rgba(255, 255, 255, 0.85);
+  color: rgba(255, 255, 255, 0.75);
 }
 
 .privacy-content strong {
